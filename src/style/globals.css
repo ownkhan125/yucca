@@ -20,7 +20,58 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #1d1d1b;
+  font-family: var(--font-roboto);
+  background-color: #fffdf5;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 95px;
+  font-weight: 200;
+  line-height: 115%;
+}
+h2 {
+  font-size: 70px;
+  line-height: 110%;
+}
+h3 {
+  font-size: 60px;
+  line-height: 120%;
+}
+h4 {
+  font-size: 48px;
+  line-height: 120%;
+}
+h5 {
+  font-size: 35px;
+  line-height: 130%;
+}
+h6 {
+  font-size: 26px;
+  line-height: 120%;
+}
+.fs-95 {
+  font-size: 95px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+
+/* home-page */
+/* section */
+.hero-section {
+  padding-top: calc(45px + 93px);
+  padding-bottom: 45px;
+}
+/* section */
+/* home-page */

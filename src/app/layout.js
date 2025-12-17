@@ -1,10 +1,11 @@
-import { Orbitron } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "../style/globals.css";
+import Header from "@/components/layout/Header";
 
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${orbitron.variable} antialiased`}>{children}</body>
+      <body className={`${roboto.variable} antialiased`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
