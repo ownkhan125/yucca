@@ -72,6 +72,9 @@ h6 {
 .hero-section {
   padding-top: calc(45px + 93px);
   padding-bottom: 45px;
+  height: 100vh;
+  background-image: url("/asset/images/hero-image.jpg");
+  background-position: center;
 }
 /* section */
 /* home-page */
