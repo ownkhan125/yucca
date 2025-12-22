@@ -12,31 +12,42 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-h1 {
-  display: inline-block;
+.reveal-on-hover {
+  position: relative;
   overflow: hidden;
 }
 
-h1 span {
+/* inner text animation */
+.reveal-on-hover .inner-text {
   display: inline-block;
-  transform-origin: bottom;
-  transform: translateY(100%);
+  transform: translateY(100px);
   opacity: 0;
-  animation: slide-up 0.85s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: inner-text 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
-@keyframes slide-up {
-  to {
+/* animation */
+@keyframes inner-text {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* stagger delay (manual, CSS way) */
+.reveal-on-hover:nth-child(1) .inner-text {
+  animation-delay: 0.025s;
+}
+
+.reveal-on-hover:nth-child(2) .inner-text {
+  animation-delay: 0.05s;
+}
+
+.reveal-on-hover:nth-child(3) .inner-text {
+  animation-delay: 0.075s;
 }
 
 body {
