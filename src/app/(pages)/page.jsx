@@ -1,12 +1,14 @@
-import CheckGsap from "@/components/CheckGsap";
+import ButtonPrimary from "@/components/buttons/ButtonPrimary";
+
 import FoodCard from "@/components/FoodCard";
+import MarqueeSection from "@/components/sections/MarqueeSection";
 import Test from "@/components/Test";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <section className="hero-section bg-green-200">
+      <section className={"hero-section "}>
         <div className="container ">
           <div className="w-3/5">
             <Test
@@ -24,19 +26,24 @@ const page = () => {
         </div>
       </section>
 
-      <section className="second bg-green-200">
-        <div className="container ">
-          <div className="w-3/5">
+      <MarqueeSection />
+
+      <section className="help-section bg-primary  py-160">
+        <div className="container">
+          <div className="w-3/5 mx-auto">
             <Test
-              as="h2"
-              text="Packaging that Performs. Innovated for Industry Leaders."
-              className="mb-12"
+              as="h5"
+              className="text-center mb-9"
+              text={
+                "Set the standard for packaging excellence in your industry. Let us help you make your products memorable."
+              }
             />
+            <div className="w-fit mx-auto">
+              <ButtonPrimary />
+            </div>
           </div>
         </div>
       </section>
-
-      <CheckGsap />
     </>
   );
 };

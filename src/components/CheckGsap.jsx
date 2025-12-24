@@ -12,12 +12,11 @@ export default function CheckGsap() {
   useEffect(() => {
     sectionsRef.current.forEach((section, index) => {
       ScrollTrigger.create({
-        trigger: section, // kis section ko watch karna hai
-        start: "top 80%", // jab viewport ke 80% par aaye
+        trigger: section,
+        start: "top 80%",
         onEnter: () => {
           console.log(`Section ${index + 1} viewport me aa gaya`);
 
-          // sirf example ke liye animation
           gsap.to(section, {
             opacity: 1,
             y: 0,
@@ -42,7 +41,7 @@ export default function CheckGsap() {
             fontSize: "40px",
             background: index % 2 === 0 ? "#1e1e1e" : "#333",
             color: "white",
-            opacity: 0, // initial hidden
+            opacity: 0,
             transform: "translateY(100px)",
           }}
         >
