@@ -24,7 +24,7 @@ const MarqueeSection = () => {
   }, []);
 
   return (
-    <section className="marquee-section py-160">
+    <section className="marquee-section bg-primary py-160">
       <div className="marquee marquee-left mb-10">
         <div className="marquee-track">
           <Test as="h2" text="Branding" />

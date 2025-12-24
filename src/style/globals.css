@@ -253,19 +253,28 @@ h6 {
 }
 
 .marquee-section {
-  background-color: #dfdac6;
   background-image: url("/asset/images/box.webp");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-
+  background-position: 120% center;
   opacity: 0;
-  transform: translateX(60px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .marquee-section.animate {
-  opacity: 1;
-  transform: translateX(0);
+  animation: slideBgFromRight 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slideBgFromRight {
+  0% {
+    background-position: 140% center;
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    background-position: center;
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* section */
