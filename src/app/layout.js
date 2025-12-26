@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "../style/globals.css";
 import Header from "@/components/layout/Header";
+import "aos/dist/aos.css";
 
 const roboto = Roboto({
   variable: "--font-roboto",

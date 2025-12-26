@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ButtonPrimary({
   href = "#",
-  text = "About us",
+  text = "See Products",
   className,
 }) {
   return (

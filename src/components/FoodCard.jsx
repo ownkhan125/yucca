@@ -1,11 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Test from "./Test";
+import AOS from "aos";
 
 export default function FoodCard() {
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <motion.div
@@ -14,6 +22,7 @@ export default function FoodCard() {
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       className="relative w-full aspect-square rounded-2xl overflow-hidden cursor-pointer"
+      data-aos="zoom-out-up"
     >
       {/* BACKGROUND */}
       <motion.div
