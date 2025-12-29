@@ -1,6 +1,7 @@
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 
 import FoodCard from "@/components/FoodCard";
+import FoodSection from "@/components/sections/FoodSection";
 import MarqueeSection from "@/components/sections/MarqueeSection";
 import Test from "@/components/Test";
 import React from "react";
@@ -44,6 +45,8 @@ const page = () => {
           </div>
         </div>
       </section>
+
+      <FoodSection />
     </>
   );
 };
