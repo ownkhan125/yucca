@@ -6,13 +6,13 @@ const CARDS = [
   {
     id: 0,
     title: "Food Services",
-    text: "Your food service packaging is an extension of your brand experience.",
+    text: "Your food service packaging is an extension of your brand experience. Retail packaging that strengthens brand presence.",
     bg: "/asset/images/background1.jpg",
   },
   {
     id: 1,
     title: "Retail",
-    text: "Retail packaging that strengthens brand presence.",
+    text: "Retail packaging that strengthens brand presence.Retail packaging that strengthens brand presence.Retail packaging that strengthens brand presence.Retail packaging that strengthens brand presence.",
     bg: "/asset/images/background2.jpg",
   },
   {
@@ -28,14 +28,14 @@ export default function FoodSection() {
 
   return (
     <section
-      className="relative py-32 transition-all duration-500"
+      className="relative py-32 transition-all duration-500 "
       style={{
         backgroundImage: `url(${CARDS[activeId].bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="container">
+      <div className="w-[1200px] mx-auto">
         <div className="relative z-10 flex flex-row items-center justify-between gap-6">
           {CARDS.map((card) => (
             <FoodActiveCard

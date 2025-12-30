@@ -25,7 +25,7 @@
   display: inline-block;
   transform: translateY(100%);
   opacity: 0;
-  animation: slideUp 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: slideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* slide up animation */
@@ -143,6 +143,10 @@ h6 {
 }
 .py-90 {
   padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.pb-90 {
   padding-bottom: 90px;
 }
 

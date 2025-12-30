@@ -47,6 +47,23 @@ const page = () => {
       </section>
 
       <FoodSection />
+
+      <section className="py-90">
+        <div className="container">
+          <div className="flex flex-row justify-between">
+            <div className="w-[51%]">
+              <Test as="h2" text="Committed to Excellence, always Innovating" />
+            </div>
+            <div className="w-2/5">
+              <p className="mb-7">
+                Remarkable packaging is our promise to you. What doesn’t meet
+                Yucca standards is refined until it does.
+              </p>
+              <ButtonPrimary text="About us" className={"w-fit"} />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

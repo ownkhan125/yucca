@@ -42,7 +42,7 @@ export default function Test({ text, as: Tag = "p", className = "" }) {
         gsap.to(lines, {
           y: 0,
           opacity: 1,
-          duration: 0.45,
+          duration: 0.4,
           stagger: 0.06,
           ease: "power3.out",
         });
