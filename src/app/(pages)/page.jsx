@@ -1,3 +1,4 @@
+import AnimateDivider from "@/components/AnimateDivider";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 
 import FoodCard from "@/components/FoodCard";
@@ -10,7 +11,7 @@ const page = () => {
   return (
     <>
       <section className={"hero-section "}>
-        <div className="container ">
+        <div className="container">
           <div className="w-3/5">
             <Test
               as="h1"
@@ -19,7 +20,7 @@ const page = () => {
             />
           </div>
 
-          <div className="grid grid-cols-4 gap-5">
+          <div className="flex flex-row  gap-5">
             <FoodCard />
             <FoodCard />
             <FoodCard />
@@ -48,9 +49,9 @@ const page = () => {
 
       <FoodSection />
 
-      <section className="py-90">
+      <section className="committed-section py-90">
         <div className="container">
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between pb-90">
             <div className="w-[51%]">
               <Test as="h2" text="Committed to Excellence, always Innovating" />
             </div>
@@ -62,6 +63,8 @@ const page = () => {
               <ButtonPrimary text="About us" className={"w-fit"} />
             </div>
           </div>
+
+          <AnimateDivider trigger={"committed-section"} />
         </div>
       </section>
     </>

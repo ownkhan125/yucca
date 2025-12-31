@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Test from "./Test";
 import AOS from "aos";
+import AnimateDivider from "./AnimateDivider";
 
 export default function FoodCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,7 +22,7 @@ export default function FoodCard() {
       whileHover="hover"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="relative w-full aspect-square rounded-2xl overflow-hidden cursor-pointer"
+      className="relative  min-h-[320px] min-w-[330px] rounded-2xl overflow-hidden cursor-pointer"
       data-aos="zoom-out-up"
     >
       {/* BACKGROUND */}
@@ -65,26 +66,20 @@ export default function FoodCard() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.15, ease: "easeInOut" }}
-          className="absolute inset-0 z-10 flex flex-col justify-between p-5"
+          className="absolute inset-0 z-10 flex flex-col gap-5 justify-between p-5"
         >
           {/* TOP PARAGRAPH */}
-          <Test
-            className="fs-18"
-            text="Your food service packaging is an extension of your brand experience. Have functional and on-brand items like cups, tubs, bowls, and more readily available for takeout, catering, and deli food. Choose standard containers, customised or designed from scratch"
-          />
+          <div>
+            <Test
+              as="p"
+              className="fs-18"
+              text="Your food service packaging is an extension of your brand experience."
+            />
+          </div>
 
           {/* BOTTOM */}
           <div className="relative pt-3">
-            <motion.span
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 0.55,
-                ease: [0.1, 0.25, 0.36, 1],
-              }}
-              style={{ transformOrigin: "left" }}
-              className="absolute left-0 top-0 h-px w-full bg-black"
-            />
+            <AnimateDivider />
 
             <div className="flex items-center justify-between text-sm pt-3">
               <span className="fs-18">Tell me more</span>

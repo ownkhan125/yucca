@@ -28,7 +28,7 @@ export default function FoodSection() {
 
   return (
     <section
-      className="relative py-32 transition-all duration-500 "
+      className="food-section relative py-32 transition-all duration-500 "
       style={{
         backgroundImage: `url(${CARDS[activeId].bg})`,
         backgroundSize: "cover",

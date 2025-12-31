@@ -6,7 +6,7 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-export default function Test({ text, as: Tag = "p", className = "" }) {
+export default function Test({ text, as: Tag = "p", className }) {
   const textRef = useRef(null);
   const hasAnimated = useRef(false);
 
@@ -42,7 +42,7 @@ export default function Test({ text, as: Tag = "p", className = "" }) {
         gsap.to(lines, {
           y: 0,
           opacity: 1,
-          duration: 0.4,
+          duration: 0.8,
           stagger: 0.06,
           ease: "power3.out",
         });

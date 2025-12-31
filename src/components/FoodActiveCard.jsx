@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Test from "./Test";
+import AnimateDivider from "./AnimateDivider";
 
 export default function FoodActiveCard({ title, text, isActive, onActivate }) {
   return (
@@ -65,16 +66,7 @@ export default function FoodActiveCard({ title, text, isActive, onActivate }) {
           </div>
           {/* BOTTOM */}
           <div className="relative pt-3">
-            <motion.span
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 0.55,
-                ease: [0.1, 0.25, 0.36, 1],
-              }}
-              style={{ transformOrigin: "left" }}
-              className="absolute left-0 top-0 h-px w-full bg-black"
-            />
+            <AnimateDivider />
 
             <div className="flex items-center justify-between text-sm pt-3">
               <h6>
