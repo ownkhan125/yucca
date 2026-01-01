@@ -1,12 +1,13 @@
 import Link from "next/link";
 
-export default function ButtonPrimary({
-  href = "#",
+export default function Button({
+  href = "/",
   text = "See Products",
+  variant = "btn-primary",
   className,
 }) {
   return (
-    <Link href={href} className={`btn btn-primary ${className}`}>
+    <Link href={href} className={`btn ${variant} ${className}`}>
       <span className="btn-fill" />
 
       <span className="btn-text-wrapper">

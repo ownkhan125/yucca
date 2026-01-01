@@ -2,6 +2,8 @@ import { Roboto } from "next/font/google";
 import "../style/globals.css";
 import Header from "@/components/layout/Header";
 import "aos/dist/aos.css";
+import AosInit from "@/components/animations/AosInit";
+import PresetGSAP from "@/components/animations/PresetGSAP";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -20,6 +22,8 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.variable} antialiased`}>
         <Header />
         {children}
+        <AosInit />
+        {/* <PresetGSAP /> */}
       </body>
     </html>
   );

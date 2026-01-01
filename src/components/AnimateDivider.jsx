@@ -20,12 +20,10 @@ export default function AnimateDivider({
     className: `absolute left-0 top-0 h-[0.5px] w-full ${color} ${className}`,
   };
 
-  // ✅ DEFAULT: instant animation
   if (trigger === null) {
     return <motion.span {...commonProps} animate={{ scaleX: 1 }} />;
   }
 
-  // ✅ SCROLL TRIGGER: animate when section enters viewport
   return (
     <motion.span
       {...commonProps}

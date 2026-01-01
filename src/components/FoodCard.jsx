@@ -1,20 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Test from "./Test";
-import AOS from "aos";
 import AnimateDivider from "./AnimateDivider";
 
 export default function FoodCard() {
   const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
 
   return (
     <motion.div
@@ -22,8 +14,10 @@ export default function FoodCard() {
       whileHover="hover"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="relative  min-h-[320px] min-w-[330px] rounded-2xl overflow-hidden cursor-pointer"
+      className="relative min-h-[320px] min-w-[330px] rounded-2xl overflow-hidden cursor-pointer"
       data-aos="zoom-out-up"
+      data-aos-duration="1000" // optional override
+      data-aos-once="true" // optional: animate only once
     >
       {/* BACKGROUND */}
       <motion.div
@@ -94,7 +88,7 @@ export default function FoodCard() {
                   <path
                     d="M13.6923 17.6155L12.9845 16.8963L17.073 12.8078H5V11.8078H17.073L12.9845 7.71925L13.6923 7L19 12.3078L13.6923 17.6155Z"
                     fill="#1D1D1B"
-                  ></path>
+                  />
                 </svg>
               </span>
             </div>
