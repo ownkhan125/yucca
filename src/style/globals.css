@@ -12,6 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .reveal-on-hover {
   overflow: hidden;
 }
@@ -141,6 +145,10 @@ h6 {
   font-size: 16px;
 }
 
+.py-45 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
 .py-60 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -171,6 +179,14 @@ h6 {
   display: block;
 }
 
+.bg-primary {
+  background-color: #dfdac6;
+}
+
+.bg-green {
+  background-color: #12271d;
+}
+
 .btn,
 .btn-sm {
   position: relative;
@@ -190,10 +206,6 @@ h6 {
 .btn-sm {
   padding: 0px 8px;
   font-size: 13px;
-}
-
-.bg-primary {
-  background-color: #dfdac6;
 }
 
 .btn-primary {

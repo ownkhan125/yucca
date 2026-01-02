@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <AosInit />
-        {/* <PresetGSAP /> */}
+        <PresetGSAP />
       </body>
     </html>
   );

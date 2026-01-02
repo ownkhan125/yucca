@@ -5,6 +5,8 @@ import ProductCard from "@/components/ProductCard";
 import FoodSection from "@/components/sections/FoodSection";
 import MarqueeSection from "@/components/sections/MarqueeSection";
 import Test from "@/components/Test";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -138,6 +140,128 @@ const page = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      <section className="solution-section py-90 bg-green relative">
+        <div className="container relative">
+          <div className="w-2/3 mb-16">
+            <p className="mb-7 text-white!">Custom Solutions</p>
+            <Test
+              as="h2"
+              text="Brands that thrive invest in custom-designed packaging. Let us help bring your vision to life."
+              className={"text-white!"}
+            />
+          </div>
+          {/* image-absolute */}
+          <div className="absolute top-0 -right-[20%] img-wrapper w-[750px] h-[380px] overflow-hidden">
+            <Image
+              src={"/asset/images/menu.webp"}
+              alt="Solution Image"
+              width={722}
+              height={411}
+              className="w-full! h-full! object-cover"
+            />
+          </div>
+          {/* image-absolute */}
+        </div>
+        <div className="border-y border-[#FEFEFE] py-45">
+          <div className="marquee marquee-left">
+            <div className="marquee-track">
+              <Link href={"/"} className="flex flex-row gap-2">
+                <div>
+                  <h2 className="text-white!">
+                    Not sure what's possible? Get in touch to find out.
+                  </h2>
+                </div>
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M57.2318 20.2935C57.9245 19.8361 58.8666 19.9137 59.4764 20.5236C60.0863 21.1334 60.1639 22.0755 59.7065 22.7682L59.4764 23.047L22.5235 60L20 57.4765L56.953 20.5236L57.2318 20.2935Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M56.4295 23.5691H20.7383V20H59.9986V59.2603H56.4295V23.5691Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </Link>
+              <Link href={"/"} className="flex flex-row gap-2">
+                <div>
+                  <h2 className="text-white!">
+                    Not sure what's possible? Get in touch to find out.
+                  </h2>
+                </div>
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M57.2318 20.2935C57.9245 19.8361 58.8666 19.9137 59.4764 20.5236C60.0863 21.1334 60.1639 22.0755 59.7065 22.7682L59.4764 23.047L22.5235 60L20 57.4765L56.953 20.5236L57.2318 20.2935Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M56.4295 23.5691H20.7383V20H59.9986V59.2603H56.4295V23.5691Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </Link>
+              <Link href={"/"} className="flex flex-row gap-2">
+                <div>
+                  <h2 className="text-white!">
+                    Not sure what's possible? Get in touch to find out.
+                  </h2>
+                </div>
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M57.2318 20.2935C57.9245 19.8361 58.8666 19.9137 59.4764 20.5236C60.0863 21.1334 60.1639 22.0755 59.7065 22.7682L59.4764 23.047L22.5235 60L20 57.4765L56.953 20.5236L57.2318 20.2935Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M56.4295 23.5691H20.7383V20H59.9986V59.2603H56.4295V23.5691Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </Link>
+              <Link href={"/"} className="flex flex-row gap-2">
+                <div>
+                  <h2 className="text-white!">
+                    Not sure what's possible? Get in touch to find out.
+                  </h2>
+                </div>
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M57.2318 20.2935C57.9245 19.8361 58.8666 19.9137 59.4764 20.5236C60.0863 21.1334 60.1639 22.0755 59.7065 22.7682L59.4764 23.047L22.5235 60L20 57.4765L56.953 20.5236L57.2318 20.2935Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M56.4295 23.5691H20.7383V20H59.9986V59.2603H56.4295V23.5691Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
