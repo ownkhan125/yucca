@@ -1,4 +1,5 @@
 import AnimateDivider from "@/components/AnimateDivider";
+import BulletHeading from "@/components/BulletHeading";
 import Button from "@/components/buttons/Button";
 import FoodCard from "@/components/FoodCard";
 import ProductCard from "@/components/ProductCard";
@@ -71,15 +72,7 @@ const page = () => {
           <div className="flex flex-row justify-between py-90">
             <div className="w-2/5">
               <div className="flex flex-row items-center gap-2">
-                <span
-                  data-aos="zoom-in"
-                  className="dot"
-                  aria-hidden="true"
-                ></span>
-
-                <h5>
-                  <Test as="span" text={"Our Mission"} />
-                </h5>
+                <BulletHeading heading="Our Mission" />
               </div>
             </div>
             <div className="w-2/5">
@@ -97,15 +90,7 @@ const page = () => {
           <div className="flex flex-row justify-between py-90">
             <div className="w-2/5">
               <div className="flex flex-row items-center gap-2">
-                <span
-                  data-aos="zoom-in"
-                  className="dot"
-                  aria-hidden="true"
-                ></span>
-
-                <h5>
-                  <Test as="span" text={"Our Vision"} />
-                </h5>
+                <BulletHeading heading="Our Vision" />
               </div>
             </div>
             <div className="w-2/5">
@@ -263,6 +248,25 @@ const page = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="standard-section py-160">
+        <div className="container">
+          <div className="flex flex-row justify-between items-center gap-4 mb-22">
+            <div className="w-3/5">
+              <Test as="h3" text="Factory & Product Standards" />
+            </div>
+            <div className="w-2/5">
+              <p>
+                Our partners share our commitment to responsible practices, so
+                you can trust that every product is held to the highest
+                standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-22"></div>
         </div>
       </section>
     </>
