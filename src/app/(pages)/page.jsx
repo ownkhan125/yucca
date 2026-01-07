@@ -71,9 +71,7 @@ const page = () => {
           </div>
           <div className="flex flex-row justify-between py-90">
             <div className="w-2/5">
-              <div className="flex flex-row items-center gap-2">
-                <BulletHeading heading="Our Mission" />
-              </div>
+              <BulletHeading heading="Our Mission" />
             </div>
             <div className="w-2/5">
               <Test
@@ -89,9 +87,7 @@ const page = () => {
           </div>
           <div className="flex flex-row justify-between py-90">
             <div className="w-2/5">
-              <div className="flex flex-row items-center gap-2">
-                <BulletHeading heading="Our Vision" />
-              </div>
+              <BulletHeading heading="Our Vision" />
             </div>
             <div className="w-2/5">
               <Test
@@ -266,7 +262,149 @@ const page = () => {
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-x-22"></div>
+          <div className="grid grid-cols-2 gap-x-22">
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full py-25">
+                <BulletHeading heading="Our Mission" />
+              </div>
+              <div className="relative">
+                <AnimateDivider
+                  color="bg-[#DFDAC6]"
+                  full={true}
+                  trigger={"committed-section"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="accordian-section bg-secondary py-90">
+        <div className="container">
+          <div className="flex flex-row justify-between ">
+            <div className="w-1/5">
+              <Test
+                as="h5"
+                text="Frequently Asked Questions"
+                className={"mb-6"}
+              />
+              <Button
+                variant="btn-primary"
+                text="View all"
+                className={"w-fit"}
+              />
+            </div>
+
+            <div className="w-2/4"></div>
+          </div>
         </div>
       </section>
     </>

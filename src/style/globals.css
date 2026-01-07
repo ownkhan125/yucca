@@ -148,6 +148,10 @@ h6 {
   font-size: 65px;
 }
 
+.py-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .py-45 {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -184,6 +188,9 @@ h6 {
 
 .bg-primary {
   background-color: #dfdac6;
+}
+.bg-secondary {
+  background-color: #f7f4e9;
 }
 
 .bg-green {
